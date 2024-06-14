@@ -66,5 +66,10 @@ namespace WindowsFormsApp1
             register.Show();
             this.Hide();
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

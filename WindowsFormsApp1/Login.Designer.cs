@@ -35,6 +35,7 @@
             this.usrnameField = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // registerButton
@@ -91,12 +92,24 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Password";
             // 
+            // exitButton
+            // 
+            this.exitButton.ForeColor = System.Drawing.Color.Black;
+            this.exitButton.Location = new System.Drawing.Point(25, 164);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(211, 23);
+            this.exitButton.TabIndex = 6;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
             // loginFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(261, 193);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.usrnameField);
@@ -122,6 +135,7 @@
         private System.Windows.Forms.TextBox usrnameField;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button exitButton;
     }
 }
 
